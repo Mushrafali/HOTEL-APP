@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{%  block start %}
+
+<section class="colorful jumbotron mb-0" role="banner">
+    <nav class="navbar navbar-expand-lg justify-content-between navbar-dark" role="navigation">
+        <div class="navbar-brand">
+            <a href="/">Hotel App
+                <em>.</em>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="media/hotels/hb.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="media/hotels/hb2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="media/hotels/hb3.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container hotels-container">
+
+        <div class="row mt-1 justify-content-between">
+            <div class="col-md-8 text-white align-self-center mb-2 p-4">
+                <h1>Find your next stay</h1>
+                <span class=""> Search low prices on hotels, homes and much more...
+                </span>
+            </div>
+           
+        </div>
+    </div>
+</section>
+        
+<section class="home">
+    <div class="pb-7">
+        <p class="text-center">LOGIN TO YOUR ACCOUNT TO BOOK THE ROOM AS PER YOUR NEED</P>
+    </div>
+    <div class="container mt-1 pt-1 col-6">
+
+        <form method="POST">
+            {% csrf_token %}
+            {%include "messages.html"%}
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="text" name="username" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</section>
+
+
+{% endblock %}
