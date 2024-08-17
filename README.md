@@ -1,5 +1,5 @@
 # HOTEL-APP
-A Hotel Reservation Managment System for my City ( ANAND ) using Python, Django, MySQL, HTML, CSS, JavaScript, and Bootstrap is a comprehensive web-based application designed to streamline hotel bookings and management processes. It was specifically developed for hotels in my city, tailoring its features and functionality to meet local needs.
+A Hotel Reservation Managment System for my City ( ANAND ) using Python, Django, MySQL, HTML, CSS, and Bootstrap is a comprehensive web-based application designed to streamline hotel bookings and management processes. It was specifically developed for hotels in my city, tailoring its features and functionality to meet local needs.
 
 Key Features:
 
@@ -13,7 +13,7 @@ Payment Integration: Supports secure online payment methods popular in your city
 
 Booking History: Users can view their reservation history, and hotel management can track local booking trends.
 
-Responsive Design: The frontend, built with HTML, CSS, JavaScript, and Bootstrap, is optimized for users in your city, offering a seamless experience across devices.
+Responsive Design: The frontend, built with HTML, CSS, Python, and Bootstrap, is optimized for users in your city, offering a seamless experience across devices.
 
 Localization: The system includes language support, currency, and date formats specific to your city, providing a more personalized user experience.
 
